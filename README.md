@@ -1,6 +1,10 @@
 # RaspberryUtils
 
-How to compile
+## Notes
+Only tested on DHT22
+
+## AdaFruit_DHT
+### How to compile
 
 * First, compile BCM2835 library, [see this gist](https://gist.github.com/kevin39/9776185974578438cf7e).
 * Then, compile the module : 
@@ -8,8 +12,8 @@ How to compile
 ```
 gcc -o Adafruit_DHT_InternalPull Adafruit_DHT_InternalPull.c -lbcm2835 -std=gnu99 -lrt
 ```
-* Using like the original module : 
 
+### How to use
 ```
 $ sudo ./Adafruit_DHT_InternalPull 22 19
 Using pin #19
